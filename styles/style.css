@@ -1,0 +1,278 @@
+/*FONTS*/
+/*Regular 400*/
+/*Regular 400- Bold 700*/
+/*MEDIA*/
+/* COLORES */
+header #logo {
+  display: block;
+  width: 15%;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 500px) {
+  header #logo {
+    width: 35%;
+  }
+}
+
+header #searchbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header #searchbar input {
+  display: block;
+  width: 50%;
+  height: 30px;
+  margin: 20px 5px;
+  border-radius: 5px;
+  background-color: darkgray;
+  border: 1px solid black;
+  padding-left: 5px;
+  font-family: "Audiowide", cursive;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+header #searchbar input::-webkit-input-placeholder {
+  font-family: "Audiowide", cursive;
+  font-size: 15px;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+header #searchbar input:-ms-input-placeholder {
+  font-family: "Audiowide", cursive;
+  font-size: 15px;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+header #searchbar input::-ms-input-placeholder {
+  font-family: "Audiowide", cursive;
+  font-size: 15px;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+header #searchbar input::placeholder {
+  font-family: "Audiowide", cursive;
+  font-size: 15px;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+@media screen and (max-width: 500px) {
+  header #searchbar input {
+    width: 85%;
+  }
+  header #searchbar input::-webkit-input-placeholder {
+    font-size: 10px;
+  }
+  header #searchbar input:-ms-input-placeholder {
+    font-size: 10px;
+  }
+  header #searchbar input::-ms-input-placeholder {
+    font-size: 10px;
+  }
+  header #searchbar input::placeholder {
+    font-size: 10px;
+  }
+}
+
+header #sugerir {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+header #sugerir label {
+  font-family: "Audiowide", cursive;
+  color: white;
+  font-size: 18px;
+}
+
+header #sugerir label:hover {
+  color: yellow;
+}
+
+/*FONTS*/
+/*Regular 400*/
+/*Regular 400- Bold 700*/
+/*MEDIA*/
+/* COLORES */
+main #cargando {
+  display: block;
+  color: white;
+  text-align: center;
+  margin: 30px;
+  font-family: "Audiowide", cursive;
+}
+
+main #imghome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main #imghome .shcontenedor {
+  width: 25%;
+  margin: 30px;
+}
+
+main #imghome .shcontenedor img {
+  width: 100%;
+  height: 100%;
+}
+
+main #imghome .shcontenedor .homeName {
+  font-family: "Audiowide", cursive;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  main #imghome .shcontenedor {
+    width: 40%;
+    margin: 0px 10px 100px 10px;
+  }
+}
+
+main #vermas {
+  display: none;
+  border: 2px solid white;
+  width: 200px;
+  margin: 30px auto;
+}
+
+main #vermas:hover {
+  border: 2px solid black;
+}
+
+main #vermas h3 {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+main #vermas h3:hover {
+  color: black;
+  background-color: white;
+}
+
+main #contdet {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas: "imagen titulo" "imagen detalle";
+}
+
+@media screen and (max-width: 500px) {
+  main #contdet {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column wrap;
+            flex-flow: column wrap;
+  }
+}
+
+main #contdet #imgdet {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: imagen;
+}
+
+main #contdet #imgdet img {
+  width: 100%;
+}
+
+main #contdet #namedet {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: titulo;
+  color: white;
+  font-family: "Audiowide", cursive;
+  font-size: 30px;
+  text-align: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+@media screen and (max-width: 500px) {
+  main #contdet #namedet {
+    margin: 20px auto;
+  }
+}
+
+main #contdet #detalle {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: detalle;
+  color: white;
+  font-family: "Roboto", sans-serif;
+  text-align: center;
+  font-size: 15px;
+  margin: 0 50px;
+}
+
+@media screen and (max-width: 500px) {
+  main #contdet #detalle {
+    margin: 10px 10px;
+  }
+}
+
+/*FONTS*/
+/*Regular 400*/
+/*Regular 400- Bold 700*/
+/*MEDIA*/
+/* COLORES */
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: black;
+}
+
+* a {
+  text-decoration: none;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
